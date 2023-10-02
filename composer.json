@@ -1,0 +1,22 @@
+{
+    "name": "acer/app-salon_php_mvc_js_sass",
+    "description": "Proyecto con PHP8, MVC, SQL, SASS y Gulp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Acer\\AppSalon\\": "src/",
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models",
+            "Classes\\" : "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tatiana Valencia"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
