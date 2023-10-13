@@ -20,3 +20,9 @@ function isAuth() : void {
         header('location: /');
     }
 }
+// Evita crear múltiples archivos temporales de sesión
+function isSession() : void {
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+}
