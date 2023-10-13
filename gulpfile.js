@@ -13,6 +13,7 @@ const cache = require('gulp-cache');
 const clean = require('gulp-clean');
 const webp = require('gulp-webp');
 
+
 const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js',
