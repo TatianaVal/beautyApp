@@ -4,6 +4,7 @@ require_once __DIR__ . '/../includes/app.php';
 
 header('Access-Control-Allow-Origin: *');
 
+use Controllers\AdminController;
 use Controllers\APIController;
 use Controllers\CitaController;
 use Controllers\LoginController;
@@ -35,6 +36,7 @@ $router->get('/mensaje', [LoginController::class, 'mensaje']);
 
 // Area Privada
 $router->get('/cita', [CitaController::class, 'index']);
+$router->get('/admin', [AdminController::class, 'index']);
 
 // API de citas
 $router->get('/api/servicios', [APIController::class, 'index']);

@@ -12,9 +12,14 @@ function s($html) : string {
     $s = htmlspecialchars($html);
     return $s;
 }
+function esUltimo(string $actual, string $proximo): bool {
+     if($actual !== $proximo) {
+        return true;
+    }
+    return false;
+}
 
 // Función que revisa si el usuario esta autenticado
-
 function isAuth() : void {
     if(!isset($_SESSION['login'])) {
         header('location: /');
